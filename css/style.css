@@ -143,7 +143,7 @@ ul li {
 	margin-top: 330px;
 }
 .game {
-	margin: 20px 0 300px;
+	margin: 18px 0 300px;
 }
 .user {
 
@@ -155,7 +155,7 @@ ul li {
 }
 .user__avatar {
 	width: 50px;
-    margin: 5px 23px;
+    margin: 5px 20px;
     display: inline-block;
 }
 .user__info {
@@ -168,7 +168,9 @@ ul li {
 	font: 14px Verdana;
 	color: rgb(100, 126, 107);
 	background: url(../img/profile.png) 0 50% no-repeat;
-	padding: 0 40px 0 20px;
+	padding: 2px 0 0 15px;
+	cursor: pointer;
+	margin-right: 43px;
 }
 .user__name {
 	font: 18px CSLight;
@@ -179,7 +181,9 @@ ul li {
 	font: 14px Verdana;
 	color: rgb(100, 126, 107);
 	background: url(../img/logout.png) 0 50% no-repeat;
-	padding: 0 40px 0 20px;
+	padding: 2px 0 0 15px;
+	cursor: pointer;
+	margin-right: 43px;
 }
 .user-avatar__photo {
 	width: 100%;
@@ -208,8 +212,8 @@ ul li {
 	background: rgba(0,0,0,.7);
     position: absolute;
     bottom: 0;
-    width: 92%;
-    padding: 4%;
+    width: 95%;
+    padding: 2% 2.5%;
 }
 .wrap .row .game__wrap {
     display: block;
@@ -227,19 +231,24 @@ ul li {
 
 }
 .game__left {
-	width: 60%;
+	width: 62.5%;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
 }
 .game__right {
 	display: inline-block;
-	width: 38%;
-	padding: 0 0 0 2%;
+	width: 36%;
+    padding: 0 0 0 1.5%;
 	vertical-align: top;
 }
+.game__left-img {
+    overflow: hidden;
+    padding: 2%;
+}
 .game__left-img img{
-	width: 100%;
+	width: 114%;
+    margin: -5% -8%;
 }
 .text-small {
 	font: 14px Verdana;
@@ -330,4 +339,12 @@ ul li {
 }
 .footer__info > div {
     padding-bottom: 15px;
+}
+.big {
+	font: 36px sfd;
+	float: right;
+	color: #daaa00;
+	line-height: 22px;
+	background: url(../img/prestige.png) 0 50% no-repeat;
+	padding-left: 40px;
 }
