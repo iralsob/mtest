@@ -38,9 +38,14 @@ ul li {
 	width: 100%;
 	min-width: 1240px;
 }
-.row {
+.menu .row,
+.footer .row {
 	width: 1200px;
 	padding: 0 20px;
+}
+.row {
+	width: 1240px;
+	padding: 0;
 	position: relative;
 	z-index: 1;
 	margin: 0 auto;
@@ -145,16 +150,18 @@ ul li {
 }
 .user__content {
 	background: rgba(45,53,52,.8);
-    width: 56%;
-    padding: 30px 2%;
+    width: 72%;
+    padding: 0;
 }
 .user__avatar {
 	width: 50px;
-	margin: 25px;
-	display: inline-block;
+    margin: 5px 23px;
+    display: inline-block;
 }
 .user__info {
-	display: inline-block;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
 }
 .user__profile {
 	display: inline-block;
@@ -176,11 +183,13 @@ ul li {
 }
 .content__button {
 	background: #a00;
-	width: 35%;
-	font: 18px CSLight;
-	color: #fff;
-	text-align: center;
-	margin-left: 5%;
+    width: 26.5%;
+    font: 18px CSLight;
+    color: #fff;
+    text-align: center;
+    margin-left: 1.5%;
+    padding: 20px 0;
+    vertical-align: top;
 }
 
 .game__header {
