@@ -167,6 +167,8 @@ ul li {
 	display: inline-block;
 	font: 14px Verdana;
 	color: rgb(100, 126, 107);
+	background: url(../img/profile.png) 0 50% no-repeat;
+	padding: 0 40px 0 20px;
 }
 .user__name {
 	font: 18px CSLight;
@@ -176,6 +178,8 @@ ul li {
 	display: inline-block;
 	font: 14px Verdana;
 	color: rgb(100, 126, 107);
+	background: url(../img/logout.png) 0 50% no-repeat;
+	padding: 0 40px 0 20px;
 }
 .user-avatar__photo {
 	width: 100%;
