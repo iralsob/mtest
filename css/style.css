@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'CSLight';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/CoreSansLight.woff') format('woff'),
+       url('../fonts/CoreSansLight.ttf') format('ttf'),
+       url('../fonts/CoreSansLight.eot') format('eot'),
+       url('../fonts/CoreSansLight.otf') format('otf'), 
+       url('../fonts/CoreSansLight.svg') format('svg');
+}
+@font-face {
+  font-family: 'sfd';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/skyforge_digits.woff2') format('woff2'),
+  	   url('../fonts/skyforge_digits.woff') format('woff'),
+       url('../fonts/skyforge_digits.ttf') format('ttf'),
+       url('../fonts/skyforge_digits.eot') format('eot'),
+       url('../fonts/skyforge_digits.svg') format('svg');
+}
+body {
+	background: url(../img/bg-main.jpg) 0 0 no-repeat;
+	-webkit-font-smoothing: antialiased;
+}
+ul {
+	font-size: 0;
+	display: inline-block;
+}
+ul li {
+	font-size: 12px;
+}
+.header .row div {
+	font-size: 20px;
+	padding: 20px;
+	color: #fff;
+}
+.wrap {
+	width: 100%;
+	min-width: 1240px;
+}
+.row {
+	width: 1200px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	font-size: 0;
+}
+.wrap .row > div {
+	display: inline-block;
+}
+.menu {
+	background: url('../img/bg-top-menu.jpg') 0 0 repeat-y;
+	background-color: #fff;
+	position: relative;
+}
+.menu::after {
+  content: "";
+  background: url('../img/shadow-top-menu.png') 0 0 no-repeat;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;   
+}
+.menu__top-menu {
+	width: 100%;
+	text-align: center;
+}
+.menu__right-menu {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+.top-menu__element {
+	display: inline-block;
+	font: 18px CSLight;
+	padding: 15px 30px 11px;
+	cursor: pointer;
+	border-bottom: 4px solid transparent;
+	transition: background .5s linear;
+	position: relative;
+}
+.top-menu__element__active {
+	border-bottom-color: #647e6b;
+}
+.top-menu__element:hover {
+	background: #66806d;
+	color: #fff;
+	transition: background 0.01s linear !important;
+}
+.menu__lang {
+	cursor: pointer;
+	display: inline-block;
+}
+.menu__lang > ul {
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	background: rgba(0,0,0,.1);
+	transition: height 1s linear 0s;
+}
+.menu__lang:hover > ul {
+	display: inline-block;
+	height: auto;
+	transition: height 1s linear 0s;
+}
+.top-menu-element__drop-down {
+	height: 0;
+	position: absolute;
+    overflow: hidden;
+    color: #fff;
+    display: inline-block;
+    background: rgba(45,53,52,.8);
+    left: 0;
+    width: 100%;
+    top: 100%;
+    cursor: pointer;
+}
+.top-menu-element__drop-down li {
+	display: block;
+	color: #84c295;
+    font: 14px Verdana;
+    line-height: 20px;
+    cursor: pointer;
+}
+.top-menu-element__drop-down li:hover {
+	color: #fff;
+}
+.top-menu__element:hover .top-menu-element__drop-down {
+	height: auto;
+    margin-top: 4px;
+    padding: 10px;
+}
+.user {
+	margin-top: 330px;
+}
+.game {
+	margin: 20px 0 300px;
+}
+.user {
+
+}
+.user__content {
+	background: rgba(45,53,52,.8);
+    width: 56%;
+    padding: 30px 2%;
+}
+.user__avatar {
+	width: 50px;
+	margin: 25px;
+	display: inline-block;
+}
+.user__info {
+	display: inline-block;
+}
+.user__profile {
+	display: inline-block;
+	font: 14px Verdana;
+	color: rgb(100, 126, 107);
+}
+.user__name {
+	font: 18px CSLight;
+	color: #fff;
+}
+.user__logout {
+	display: inline-block;
+	font: 14px Verdana;
+	color: rgb(100, 126, 107);
+}
+.user-avatar__photo {
+	width: 100%;
+	border-radius: 50%;
+}
+.content__button {
+	background: #a00;
+	width: 35%;
+	font: 18px CSLight;
+	color: #fff;
+	text-align: center;
+	margin-left: 5%;
+}
+
+.game__header {
+	font: 18px CSLight;
+	color: #fff;
+	background: rgba(45,53,52,.8);
+	padding: 10px 20px;
+}
+.game__left-footer {
+	font: 18px CSLight;
+	color: #fff;    
+	background: rgba(0,0,0,.7);
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+    padding: 4%;
+}
+.wrap .row .game__wrap {
+    display: block;
+}
+.game__content {
+	background: rgba(255,255,255,.8);
+	padding: 20px;
+	position: relative;
+}
+.game__footer {
+	color: #fff;
+	background: rgba(45,53,52,.8);
+	padding: 10px 20px;
+	font: 14px Verdana;
+
+}
+.game__left {
+	width: 60%;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.game__right {
+	display: inline-block;
+	width: 38%;
+	padding: 0 0 0 2%;
+	vertical-align: top;
+}
+.game__left-img img{
+	width: 100%;
+}
+.text-small {
+	font: 14px Verdana;
+	color: #777;
+}
+.text-large {
+	font: 18px CSLight;
+}
+.text-digit {
+	font: 60px sfd;
+}
+.text-dark {
+	color: #000;
+}
+.game__right__header,
+.game__right__author {
+	border-bottom: 1px dotted #66806d;
+}
+.game__right__author .text-large {
+	font: 22px CSLight;
+}
+.game__right__author {
+    padding: 20px 0 20px 20%;
+    position: relative;
+}
+.game__right__author::before {
+    margin-left: -18%;
+    content: "";
+    background: url('../img/avatar.jpg') 0 0 no-repeat;
+    width: 15%;
+    border-radius: 50%;
+    height: auto;
+    position: absolute;
+    height: 66px;
+    background-size: contain;
+}
+.game__right__vote {
+	width: 36%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding-top: 30px;
+    border-top: 1px dotted green;
+}
+.game__right__vote--btn {
+	background: #a00;
+    color: #fff;
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 10%;
+}
+.footer {
+	background: rgba(45,53,52,.8);
+}
+.footer__menu {
+	width: 50%;
+	padding: 20px 0;
+	vertical-align: top;
+}
+.footer__info {
+	font-size: 15px;
+    text-align: right;
+}
+.footer__menu > ul {
+	width: 100%;
+}
+.footer__menu > ul > li > a {
+    font: 18px CSLight;
+    display: block;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.footer__menu ul li a {
+	color: #cacaca;
+	font-size: 12px Verdana;
+	text-decoration: none;
+	line-height: 16px;
+}
+.footer__menu > ul > li {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+.footer__info img {
+    max-height: 60px;
+}
+.footer__info > div {
+    padding-bottom: 15px;
+}
