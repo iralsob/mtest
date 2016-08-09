@@ -385,50 +385,60 @@ ul > .lang__element:hover {
 .text-digit {
 	font: 60px sfd;
 	padding-top: 11px;
-    line-height: 42px;
+    line-height: 40px;
 }
 .text-dark {
 	color: #000;
+	text-align: justify;
+    padding-top: 16px;
 }
 .game__right__header,
 .game__right__author {
 	border-bottom: 1px dashed #66806d;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
 }
 .game__right__author .text-large {
 	font: 22px CSLight;
 }
 .game__right__author {
-    padding: 20px 0 20px 20%;
+    padding: 17px 0 20px 17%;
     position: relative;
 }
 .game__right__author::before {
-    margin-left: -18%;
+    margin-left: -16%;
     content: "";
     background: url('../img/avatar.jpg') 0 0 no-repeat;
-    width: 15%;
+    width: 61px;
     border-radius: 50%;
     height: auto;
     position: absolute;
-    height: 66px;
-    background-size: contain;
+    height: 61px;
+    background-size: cover;
+    top: 16%;
+}
+.game__right__desc {
+	padding-top: 12px;
 }
 .game__right__vote {
 	width: 36%;
     position: absolute;
     bottom: 0px;
     right: 0;
-    padding-top: 30px;
-    border-top: 1px dotted green;
+    padding-top: 16px;
+    border-top: 1px dashed #66806d;
 }
 .game__right__vote--btn {
 	background: #a00;
     color: #fff;
-    width: 69%;
+    width: 290px;
     display: inline-block;
     text-align: center;
-    padding: 10px 0;
-    margin: 0 1%;
+    padding: 14px 0;
+    margin: 0 20px;
+}
+.founder {
+	padding-left: 26px;
+    background: url(../img/founder.png) 1px no-repeat;
 }
 .footer {
 	background: rgba(45,53,52,.8);
@@ -504,12 +514,12 @@ ul > .lang__element:hover {
     padding-left: 40px;
 }
 .arr {
-	    width: 10%;
+	    width: 50px;
     background: #66806d;
-    height: 42px;
+    height: 50px;
     display: inline-block;
     vertical-align: top;
-    margin: 0 3%;
+    margin: 0%;
     background-image: url(../img/arr-r.png);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -520,13 +530,39 @@ ul > .lang__element:hover {
 	margin-right: 0;
     background-image: url(../img/arr.png);
 }
+.game__back {
+    padding-top: 18px;
+    border-top: 1px dashed #66806d;
+    margin-top: 18px;
+}
 .game__back div {
 	background: #66806d;
     display: inline-block;
     padding: 10px 20px;
     font: 18px CSLight;
+    padding: 10px 39px;
     color: #fff;
+    cursor: pointer;
 }
 .column-wrap {
 	position: relative;
+}
+.share_social {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/share-social-sprite.png)  no-repeat;
+	vertical-align: top;
+}
+.share_tw {
+	background-position: -48px 0;
+}
+.share_fb {
+	background-position: -72px 0;
+}
+.share_yt {
+	background-position: -24px 0;
+}
+.share_ok {
+	background-position: 0px 0;
 }
