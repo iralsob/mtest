@@ -332,6 +332,8 @@ ul li {
 }
 .footer {
 	background: rgba(45,53,52,.8);
+	font: 12px Verdana;
+	color: #cacaca;
 }
 .footer__menu {
 	width: 50%;
@@ -353,7 +355,6 @@ ul li {
 }
 .footer__menu ul li a {
 	color: #cacaca;
-	font-size: 12px Verdana;
 	text-decoration: none;
 	line-height: 16px;
 }
@@ -363,10 +364,19 @@ ul li {
     vertical-align: top;
 }
 .footer__info img {
-    max-height: 60px;
+    max-height: 65px;
+    margin: 15px 0 0 8px;
+}
+.footer__info .age {
+	max-height: 40px;
 }
 .footer__info > div {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.footer__info a {
+	color: #0072bc;
+	text-decoration: none;
 }
 .big {
 	font: 36px sfd;
