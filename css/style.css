@@ -18,8 +18,13 @@
        url('../fonts/skyforge_digits.eot') format('eot'),
        url('../fonts/skyforge_digits.svg') format('svg');
 }
+html {
+	width: 100%;
+    min-width: 1240px;
+}
 body {
-	background: url(../img/bg-main.jpg) 0 0 no-repeat;
+	background: url(../img/bg-main.jpg) 50% 0 no-repeat;
+	background-size: cover;
 	-webkit-font-smoothing: antialiased;
 }
 ul {
