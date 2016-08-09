@@ -148,12 +148,17 @@ ul li {
 	position: relative;
 	background: rgba(45,53,52,.8);
 	transition: height 1s linear 0s;
+	
 }
 .menu__lang:hover > ul {
 	display: inline-block;
 	height: auto;
 	transition: height 1s linear 0s;
 	width: 100%;
+	padding: 5px 0;
+}
+.menu__lang:hover .lang__header {
+	color: #fff;
 }
 .lang__element {
 	background: url(../img/lng-sprite.png) no-repeat;
@@ -161,22 +166,22 @@ ul li {
     height: 15px;
     vertical-align: middle;
     display: block;
-    padding: 7px 0 8px 25px;
+    padding: 8px 0 8px 25px;
     line-height: 15px;
     color: #cacaca;
     font: 14px Verdana;
 }
 .lang__header {
-	height: 52px;
+	height: 48px;
     line-height: 52px;
-    background-position: 7px 22px;
-    margin: 0;
+    background-position: 11px 19px;
+    margin: 0 0 4px 0;
     padding: 0 0 0 25px;
     color: #000;
     font-size: 13px;
 }
 .lang__element__ru {
-	background-position: 11px 13px;
+	background-position: 11px 11px;
 }
 .lang__element__en {
 	background-position: 11px -48px;
@@ -204,10 +209,10 @@ ul > .lang__element:hover {
     left: 0;
     right: 0;
     margin: auto;
-    background: url(../img/share-sprite.png) no-repeat;
+    background: url(../img/share-sprite.png) no-repeat 2px 2px;
 }
 .menu__lang:hover .share:after {
-	background-position: 0 -26px;
+	background-position: 2px -24px;
 }
 .soc__element {
 	background: url(../img/soc-sprite.png) no-repeat;
@@ -219,16 +224,16 @@ ul > .lang__element:hover {
     padding: 2px 0 2px 24px;
 }
 .soc__element__vk {
-	background-position: 7px 2px;
+	background-position: 15px 2px;
 }
 .soc__element__fb {
-	background-position: 7px -32px;
+	background-position: 15px -32px;
 }
 .soc__element__mr {
-	background-position: 7px -66px;
+	background-position: 15px -66px;
 }
 .soc__element__ok {
-	background-position: 7px -100px;
+	background-position: 15px -100px;
 }
 .top-menu-element__drop-down {
 	height: 0;
