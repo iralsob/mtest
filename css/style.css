@@ -82,7 +82,9 @@ ul li {
 	background-color: #fff;
 	position: relative;
 }
-.menu::after {
+.menu::after,
+.top-menu__element:hover:after,
+.menu__lang:hover:after {
   content: "";
   background: url('../img/shadow-top-menu.png') 0 0 no-repeat;
   opacity: 0.3;
@@ -115,25 +117,118 @@ ul li {
 	border-bottom-color: #647e6b;
 }
 .top-menu__element:hover {
-	background: #66806d;
+	background:  #66806d;
 	color: #fff;
 	transition: background 0.01s linear !important;
+}
+.top-menu__element:hover:after{
+
 }
 .menu__lang {
 	cursor: pointer;
 	display: inline-block;
+	cursor: pointer;
+    display: inline-block;
+    font-size: 10px;
+    height: 52px;
+    width: 52px;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 52px;
+    vertical-align: top;
+    position: relative;
+}
+.menu__lang:hover {
+	background:  #66806d;
+	color: #fff;
 }
 .menu__lang > ul {
 	height: 0;
 	overflow: hidden;
 	position: relative;
-	background: rgba(0,0,0,.1);
+	background: rgba(45,53,52,.8);
 	transition: height 1s linear 0s;
 }
 .menu__lang:hover > ul {
 	display: inline-block;
 	height: auto;
 	transition: height 1s linear 0s;
+	width: 100%;
+}
+.lang__element {
+	background: url(../img/lng-sprite.png) no-repeat;
+    padding-left: 24px;
+    height: 15px;
+    vertical-align: middle;
+    display: block;
+    padding: 7px 0 8px 25px;
+    line-height: 15px;
+    color: #cacaca;
+    font: 14px Verdana;
+}
+.lang__header {
+	height: 52px;
+    line-height: 52px;
+    background-position: 7px 22px;
+    margin: 0;
+    padding: 0 0 0 25px;
+    color: #000;
+    font-size: 13px;
+}
+.lang__element__ru {
+	background-position: 7px 7px;
+}
+.lang__element__en {
+	background-position: 7px -53px;
+}
+.lang__element__us {
+	background-position: 7px -25px;
+}
+.lang__element__de {
+	background-position: 7px -85px;
+}
+ul > .lang__element:hover {
+	background-color: rgba(102,128,109,.5);
+	color: #000;
+}
+.share {
+	position: relative;
+}
+.share:after {
+	content: '';
+    width: 27px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url(../img/share-sprite.png) no-repeat;
+}
+.menu__lang:hover .share:after {
+	background-position: 0 -26px;
+}
+.soc__element {
+	background: url(../img/soc-sprite.png) no-repeat;
+    padding-left: 24px;
+    height: 30px;
+    vertical-align: middle;
+    display: block;
+    line-height: 15px;
+    padding: 2px 0 2px 24px;
+}
+.soc__element__vk {
+	background-position: 7px 2px;
+}
+.soc__element__fb {
+	background-position: 7px -32px;
+}
+.soc__element__mr {
+	background-position: 7px -66px;
+}
+.soc__element__ok {
+	background-position: 7px -100px;
 }
 .top-menu-element__drop-down {
 	height: 0;
@@ -343,6 +438,7 @@ ul li {
 .footer__info {
 	font-size: 15px;
     text-align: right;
+    width: 50%;
 }
 .footer__menu > ul {
 	width: 100%;
