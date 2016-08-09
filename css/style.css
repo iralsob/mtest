@@ -157,7 +157,7 @@ ul li {
 .drop-down__link {
 	display: block;
 	color: #84c295;
-	font: 14px Verdana;
+	font: 14px Verdana, sans-serif;
 	line-height: 20px;
 	cursor: pointer;
 	text-decoration: none;
@@ -225,7 +225,7 @@ ul li {
 	margin: 0 0 4px 0;
 	padding: 0 0 0 25px;
 	color: #000;
-	font: 13px Verdana;
+	font: 13px Verdana, sans-serif;
 }
 .right-menu:hover .right-menu__header {
 	color: #fff;
@@ -239,7 +239,7 @@ ul li {
 	padding: 8px 0 8px 25px;
 	line-height: 15px;
 	color: #cacaca;
-	font: 14px Verdana;
+	font: 14px Verdana, sans-serif;
 }
 .lang__header {
 	background: url(../img/lng-sprite.png) no-repeat;
@@ -318,7 +318,7 @@ ul li {
 }
 .user__profile {
 	display: inline-block;
-	font: 14px Verdana;
+	font: 14px Verdana, sans-serif;
 	color: rgb(100, 126, 107);
 	background: url(../img/profile.png) 0 60% no-repeat;
 	padding: 2px 0 0 15px;
@@ -331,7 +331,7 @@ ul li {
 }
 .user__logout {
 	display: inline-block;
-	font: 14px Verdana;
+	font: 14px Verdana, sans-serif;
 	color: rgb(100, 126, 107);
 	background: url(../img/logout.png) 0 80% no-repeat;
 	padding: 2px 0 0 15px;
@@ -377,7 +377,7 @@ ul li {
 	color: #fff;
 	background: rgba(45,53,52,.8);
 	padding: 10px 20px;
-	font: 14px Verdana;
+	font: 14px Verdana, sans-serif;
 }
 .column-wrap {
 	position: relative;
@@ -525,7 +525,7 @@ ul li {
 	margin-right: 7px;
 }
 .text-small {
-	font: 14px Verdana;
+	font: 14px Verdana, sans-serif;
 	color: #777;
 }
 .text-large {
@@ -546,7 +546,7 @@ ul li {
 /* FOOTER BEGIN */
 .footer {
 	background: rgba(45,53,52,.8);
-	font: 12px Verdana;
+	font: 12px Verdana, sans-serif;
 	color: #cacaca;
 }
 .footer__menu {
