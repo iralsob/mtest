@@ -161,6 +161,8 @@ ul li {
 	cursor: pointer;
 	text-decoration: none;
 	white-space: nowrap;
+	line-height: 30px;
+    padding: 0 25px;
 }
 .drop-down__elm:hover .drop-down__link{
 	color: #fff;
@@ -168,7 +170,7 @@ ul li {
 .top-menu__elm:hover .top-menu-elm__drop-down {
 	height: auto;
 	margin-top: 4px;
-	padding: 5%;
+	padding: 15px 5%;
 }
 .menu__right-menu {
 	position: absolute;
