@@ -356,7 +356,7 @@ ul li {
 .footer__menu ul li a {
 	color: #cacaca;
 	text-decoration: none;
-	line-height: 16px;
+	line-height: 22px;
 }
 .footer__menu > ul > li {
     display: inline-block;
@@ -371,8 +371,22 @@ ul li {
 	max-height: 40px;
 }
 .footer__info > div {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     font-size: 12px;
+}
+.second img {
+	margin: 3px;
+}
+.second span {
+	    line-height: 18px;
+    vertical-align: top;
+}
+.second a {
+	display: inline;
+	vertical-align: top;
+}
+.second + div img{
+	    margin-top: 5px;
 }
 .footer__info a {
 	color: #0072bc;
