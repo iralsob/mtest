@@ -201,6 +201,7 @@ ul li {
 	overflow: hidden;
 	position: relative;
 	background: rgba(45,53,52,.8);
+	display: none;
 }
 .right-menu:hover .right-menu__drop-down {
 	display: inline-block;
