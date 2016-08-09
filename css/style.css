@@ -29,10 +29,33 @@ ul {
 ul li {
 	font-size: 12px;
 }
+
+.header {
+    background: #fff;
+}
+.header .row {
+	width: 100%;
+}
 .header .row div {
-	font-size: 20px;
-	padding: 20px;
-	color: #fff;
+	min-height: 64px;
+	vertical-align: top;
+}
+.header__menu {
+    background: url(../img/b-menu.png) 5% 50% no-repeat;
+    width: 20%;
+}
+.header__logo {
+    width: 60%;
+    text-align: center;
+}
+.header__logo img {
+    margin-bottom: -10px;
+    padding-top: 10px;
+}
+.header__login {
+    background: url(../img/login.png) 95% 50% no-repeat;
+    width: 20%;
+    text-align: right;
 }
 .wrap {
 	width: 100%;
@@ -123,15 +146,17 @@ ul li {
     width: 100%;
     top: 100%;
     cursor: pointer;
+	text-align: left;
 }
-.top-menu-element__drop-down li {
+.top-menu-element__drop-down li a{
 	display: block;
 	color: #84c295;
     font: 14px Verdana;
     line-height: 20px;
     cursor: pointer;
+    text-decoration: none;
 }
-.top-menu-element__drop-down li:hover {
+.top-menu-element__drop-down li:hover a{
 	color: #fff;
 }
 .top-menu__element:hover .top-menu-element__drop-down {
@@ -167,7 +192,7 @@ ul li {
 	display: inline-block;
 	font: 14px Verdana;
 	color: rgb(100, 126, 107);
-	background: url(../img/profile.png) 0 50% no-repeat;
+	background: url(../img/profile.png) 0 60% no-repeat;
 	padding: 2px 0 0 15px;
 	cursor: pointer;
 	margin-right: 43px;
@@ -180,7 +205,7 @@ ul li {
 	display: inline-block;
 	font: 14px Verdana;
 	color: rgb(100, 126, 107);
-	background: url(../img/logout.png) 0 50% no-repeat;
+	background: url(../img/logout.png) 0 80% no-repeat;
 	padding: 2px 0 0 15px;
 	cursor: pointer;
 	margin-right: 43px;
@@ -259,13 +284,16 @@ ul li {
 }
 .text-digit {
 	font: 60px sfd;
+	padding-top: 11px;
+    line-height: 42px;
 }
 .text-dark {
 	color: #000;
 }
 .game__right__header,
 .game__right__author {
-	border-bottom: 1px dotted #66806d;
+	border-bottom: 1px dashed #66806d;
+    padding-bottom: 15px;
 }
 .game__right__author .text-large {
 	font: 22px CSLight;
@@ -344,7 +372,9 @@ ul li {
 	font: 36px sfd;
 	float: right;
 	color: #daaa00;
-	line-height: 22px;
 	background: url(../img/prestige.png) 0 50% no-repeat;
-	padding-left: 40px;
+	position: absolute;
+    right: 15px;
+    top: 10px;
+    padding-left: 40px;
 }
