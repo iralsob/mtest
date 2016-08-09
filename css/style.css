@@ -416,19 +416,19 @@ ul > .lang__element:hover {
 .game__right__vote {
 	width: 36%;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0px;
+    right: 0;
     padding-top: 30px;
     border-top: 1px dotted green;
 }
 .game__right__vote--btn {
 	background: #a00;
     color: #fff;
-    width: 80%;
+    width: 69%;
     display: inline-block;
     text-align: center;
     padding: 10px 0;
-    margin: 0 10%;
+    margin: 0 1%;
 }
 .footer {
 	background: rgba(45,53,52,.8);
@@ -502,4 +502,31 @@ ul > .lang__element:hover {
     right: 15px;
     top: 10px;
     padding-left: 40px;
+}
+.arr {
+	    width: 10%;
+    background: #66806d;
+    height: 42px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 3%;
+    background-image: url(../img/arr-r.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 30%;
+    cursor: pointer;
+}
+.arr.last {
+	margin-right: 0;
+    background-image: url(../img/arr.png);
+}
+.game__back div {
+	background: #66806d;
+    display: inline-block;
+    padding: 10px 20px;
+    font: 18px CSLight;
+    color: #fff;
+}
+.column-wrap {
+	position: relative;
 }
